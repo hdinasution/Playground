@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+}
+
+.main {
+  width: 100%;
+  padding: 20px;
+}
+
+.sidebar {
+  background: #1a1a1a;
+  color: #ffffff;
+  height: 100vh;
+  width: 200px;
+  transition: all 0.5s;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.bars {
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.link {
+  display: flex;
+  color: #ffffff;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.3s ease-out;
+}
+
+.link:hover {
+  background: #2c6fff;
+  color: #ffffff;
+  transition: all 0.3s ease-in;
+}
+
+.active {
+  background: #2c6fff;
+  color: #ffffff;
+  display: flex;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.3s ease-out;
+}
+
+.icon,
+.link-text {
+  font-size: 20px;
+}
+
+.control-panel {
+  position: absolute;
+  width: 50%;
+  padding: 10px;
+  border: solid white 0.5px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  margin-top: 480px;
+  margin-left: 25%;
+}
+
+.control {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.time-line {
+  height: 3px;
+  border-radius: 100px;
+  width: 100%;
+  background: black;
+}
+
+.fleet {
+  transition: all 0.5s ease-in;
+}
