@@ -19,13 +19,7 @@ const API_KEY = "AIzaSyCmIATqobqbCEU90nYtwd-PzCcj8EVOlDg";
 
 export default function GoogleMaps() {
   const [play, setPlay] = useState(false);
-  // Fungsi untuk mengonfigurasi opsi peta
-  const configureMapOptions = (map) => {
-    // Sembunyikan kontrol zoom
-    map.setOptions({
-      zoomControl: false,
-    });
-  };
+
   return (
     <APIProvider apiKey={API_KEY} libraries={["marker"]}>
       <div style={{ width: "100%", height: "600px" }}>
@@ -33,21 +27,21 @@ export default function GoogleMaps() {
           mapId={"bf51a910020fa25a"}
           defaultZoom={12}
           defaultCenter={{ lat: -6.927318730266049, lng: 107.47986155201951 }}
-          zoomControlOptions={{
-            position: google.maps.ControlPosition.RIGHT_TOP,
-          }}
-          fullscreenControlOptions={{
-            position: google.maps.ControlPosition.RIGHT_TOP,
-          }}
+          // zoomControlOptions={{
+          //   position: google.maps.ControlPosition.RIGHT_TOP,
+          // }}
+          // fullscreenControlOptions={{
+          //   position: google.maps.ControlPosition.RIGHT_TOP,
+          // }}
           // fullscreenControl={true}
           // zoomControl={false}
           // disableDefaultUI={{ disableDefaultUI: true }}
-          streetViewControlOptions={{
-            position: google.maps.ControlPosition.RIGHT_TOP,
-          }}
-          mapTypeControlOptions={{
-            position: google.maps.ControlPosition.TOP_RIGHT,
-          }}
+          // streetViewControlOptions={{
+          //   position: google.maps.ControlPosition.RIGHT_TOP,
+          // }}
+          // mapTypeControlOptions={{
+          //   position: google.maps.ControlPosition.TOP_RIGHT,
+          // }}
         >
           <Direction
             destination={"Gedung Sate"}

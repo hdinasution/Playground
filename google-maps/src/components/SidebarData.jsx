@@ -17,4 +17,9 @@ export const SidebarData = [
     path: "/mapbox",
     icon: <FaIcons.FaMapPin />,
   },
+  {
+    title: "Redux",
+    path: "/cobaredux",
+    icon: <FaIcons.FaBox />,
+  },
 ];
